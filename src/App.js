@@ -7,6 +7,7 @@ function App() {
     (async function () {
       const { text } = await( await fetch(`/api/message`)).json();
       setData(text);
+      
     })();
   });
 
